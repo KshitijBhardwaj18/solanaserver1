@@ -6,6 +6,7 @@ use axum::{
 use dotenv::dotenv;
 use service::solana_service::{get_balance, get_sols, transact_sol};
 use tower_http::cors::{Any, CorsLayer};
+use tracing_subscriber;
 
 mod model;
 mod service;
@@ -14,6 +15,7 @@ mod util;
 #[tokio::main]
 async fn main() {
     dotenv().ok();
+    tracing_subscriber::fmt::init();
 
     let cors = CorsLayer::new()
         // allow `GET` and `POST` when accessing the resource
@@ -36,6 +38,8 @@ async fn main() {
     let listener = tokio::net::TcpListener::bind("127.0.0.1:3000")
         .await
         .unwrap();
+
+    println!("🚀 Server listening on http://127.0.0.1:3000");
 
     axum::serve(listener, app).await.unwrap();
 }

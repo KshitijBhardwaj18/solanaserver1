@@ -1,0 +1,70 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "solana-blockchain",
+    "dateExported": "2024-02-03T04:40:43.670Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b821f17d-9cb8-413c-8df2-4e67f2966c78",
+            "colId": "0aedf8db-2d34-413b-aa93-953bef37ef13",
+            "containerId": "",
+            "name": "GET_PUBLIC_KEY",
+            "url": "http://127.0.0.1:3000/get",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-29T12:45:34.174Z",
+            "modified": "2024-01-29T12:45:34.174Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ccf80d19-3f3f-484b-84c7-d1383c1d8bc6",
+            "colId": "0aedf8db-2d34-413b-aa93-953bef37ef13",
+            "containerId": "",
+            "name": "GET_BALANCE",
+            "url": "http://127.0.0.1:3000/getBalance",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-29T12:47:53.437Z",
+            "modified": "2024-01-29T12:47:53.437Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4f18521a-80db-4dad-8eba-2d7b65e0d37e",
+            "colId": "0aedf8db-2d34-413b-aa93-953bef37ef13",
+            "containerId": "",
+            "name": "TRANSFER_SOLS",
+            "url": "http://127.0.0.1:3000/transferSols",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-01T11:59:42.349Z",
+            "modified": "2024-02-01T11:59:42.349Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"sol_to_send\": 0.1,\n  \"to_pubkey\": \"5iSkpkRao47W2GD6cDTkaogAqvwE9osEYfYifVbPVeaz\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8599a483-e12f-423c-a8b7-ce7baa0ce05a",
+            "colId": "0aedf8db-2d34-413b-aa93-953bef37ef13",
+            "containerId": "",
+            "name": "GET_SOLS",
+            "url": "http://127.0.0.1:3000/getSols",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-02-02T06:25:33.553Z",
+            "modified": "2024-02-02T06:25:50.492Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
